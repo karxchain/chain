@@ -38,44 +38,40 @@ This repository contains all core modules and tools required to run, extend, and
 ```plaintext
 chain/
 ├── core/                # Genesis, consensus configuration, and chain data
+│   └── README.md
 ├── contracts/           # Solidity smart contracts (KARX token, DPPRegistry, etc.)
+│   └── README.md
 ├── tools/               # .NET ABP-based tooling: Faucet, Installer, Explorer, CLI
 │   ├── faucet/          # Faucet module (ABP web + API)
+│   │   └── README.md
 │   ├── node-installer/  # Blazor Hybrid node setup UI
+│   │   └── README.md
 │   ├── bridge-admin/    # Admin panel for XDC bridge
+│   │   └── README.md
 │   ├── dpp-onboarding/  # Self-service DPP registration portal
+│   │   └── README.md
 │   └── explorer/        # .NET-based chain explorer (WIP)
+│       └── README.md
 ├── bridge/              # Smart contracts and tools for bridging to XDC
+│   └── README.md
 ├── docs/                # Whitepaper, integration guides, and architecture docs
+│   └── README.md
 ├── forks/               # Snapshotted versions of external dependencies (Nethermind, Blockscout)
+│   └── README.md
 ├── scripts/             # Shell & Docker scripts for setup and automation
+│   └── README.md
 ├── LICENSE              # MIT + blockchain disclaimer
 ├── README.md            # You are here
 └── .gitignore
 ```
 
----
+Each subfolder contains its own detailed README that reflects:
+- Purpose of the module
+- Current functionality
+- Future roadmap for that area
+- How it contributes to the broader Karx vision
 
-## 🧪 Getting Started
-
-1. **Clone this repo**
-```bash
-git clone https://github.com/karxchain/chain.git
-cd chain
-```
-
-2. **Explore individual folders:**
-- `core/` → Run your local Karx node
-- `tools/faucet/` → Launch faucet to request dev tokens
-- `contracts/` → Deploy KARX token or DPPRegistry
-- `scripts/` → Use helper scripts to deploy or test modules
-
-3. **To start a devnet node**
-```bash
-cd core/genesis
-geth --datadir data init genesis.json
-./start-karx-node.sh
-```
+This structure will help contributors, enterprises, and ecosystem partners quickly understand the modular value of Karx Chain and how to collaborate or extend.
 
 ---
 
@@ -89,39 +85,6 @@ geth --datadir data init genesis.json
 | [Module Reference](tools/)       | ABP modules and tool usage                  |
 
 > All documentation will be migrated to [karx.org/docs](https://karx.org/docs) soon.
-
----
-
-## 💡 Use Cases
-
-- Sustainable fashion traceability
-- Organic agriculture and supply chain compliance
-- EV Battery Passport (Regulation EU 2023/1542)
-- Cross-border supply provenance
-- Pharma and luxury item authenticity
-
----
-
-## 👨‍💻 Contributing
-
-We welcome developers, auditors, designers, and writers.
-
-```bash
-# Fork the repo
-# Create a feature branch
-# Commit and push your code
-# Submit a pull request
-```
-
-Please follow contribution guidelines inside each module/folder’s `README.md`.
-
----
-
-## 🔒 License & Disclaimer
-
-Karx Chain is licensed under the MIT License. See [LICENSE](LICENSE) for full terms.
-
-> This software is provided "as is" without warranties. It is intended for experimental, educational, and open-source development purposes only. Karpine Technologies disclaims liability for any damages or losses arising from the use of this protocol.
 
 ---
 
